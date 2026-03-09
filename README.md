@@ -31,6 +31,12 @@ An embedded document-wide chat is outside the scope - in most usage cases, the p
 * WYSIWYG-editing of markdown text.  Personally I think it's an anti-feature, but the not-so-technically-minded may like it.
 * Export to PDF.  Again, there exists many libraries for this.
 * Nifty user interfaces for checking "activity since my last visit" and things like that, for people who are not familiar with git.
+* Federation - should be easy to clone the git-repo locally, spin up a local web service and automatically have the git repos synced
+
+## Tehcnical challenges
+
+* Storing comments on the produced text while keeping it git-backed.  Suggestion: embed the comments in the file itself, but in a different branch.
+* Conflict resolution.  Short-term workaround: throw a red text at the user, save the work in a separate branch and have the user manually resolve the conflicts
 
 ## TODO
 
