@@ -31,3 +31,11 @@ An embedded document-wide chat is outside the scope - in most usage cases, the p
 * WYSIWYG-editing of markdown text.  Personally I think it's an anti-feature, but the not-so-technically-minded may like it.
 * Export to PDF.  Again, there exists many libraries for this.
 * Nifty user interfaces for checking "activity since my last visit" and things like that, for people who are not familiar with git.
+
+## TODO
+
+* Clean up typos and bad grammar in this document
+* Do research on existing solutions.  (Does gitea allow collaborative editing of documents?)
+* If nothing suitable found, make a design for a python-based service (we're primarily python programmers, after all).
+
+(Those points can easily be done by AI, but I've burned my weekly quota at Claude)
