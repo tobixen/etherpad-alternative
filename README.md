@@ -1,6 +1,6 @@
 This describes a possible future project.  Research should exist to see if there are any existing solutions that could fit the bill, or if it's possible to simply build on top of the existing etherpad service.
 
-## What do we want
+## What do I want
 
 Something like Etherpad, just better.  An open-source web service that easily can be spun up on any server, ad-hoc or permanently.
 
@@ -50,6 +50,6 @@ I think there exists libaries or software components for everything below - I th
 
 * Clean up typos and bad grammar in this document
 * Do research on existing solutions.
-* If nothing suitable found, make a design for a python-based service (we're primarily python programmers, after all).
+* If nothing suitable found, make a design for a python-based service (because that's my primarily programming language nowadays ... if someone else will do the project, then some other programming language may be better).
 
 (Those points can easily be done by AI, but I've burned my weekly quota at Claude)
