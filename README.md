@@ -22,14 +22,17 @@ An embedded document-wide chat is outside the scope - in most usage cases, the p
 * Antifeature: Etherpad is not designed to edit plain text files.  It has possibilities to add bold text, ordered lists, etc.  I consider this to be anti-features - if anyone uses those features, it gets difficult to export the document. The standard text file export will drop information.
 * Version control and visibility: Who changed what and when?  What changes have been made to the document since my last visit?  Etherpad has all the information, but no good interface to access it.  Given that the target audience here is technically-minded people, having the file git-backed will solve this problem very easily.
 * Annotations: Etherpad has a document-wide chat, but it's missing the possibility to attach comments and discussions to text lines.  It's a requirement that those comments are stored inside the git repository, this will be a bit techically challenging.
+* Slightly irrelevant rant: Google Docs is the most commonly used alternative to Etherpad.  At some point they introduced the concept of pages.  In the previous millenium this may have been considered a feature as the prime purpose of editing a document often was to print out the letter.  Does Google stick to local standards or the international paper size standard?  Even in the previous millenium documents made for the wrong paper size was an anti-feature.  For editing code, this is obviously an anti-feature.
 
 ## Nice-to-have features
 
-* Git export functionallity - possibility for clients to point their git to the server.  (We should not reinvent the wheel here - use existing libraries or software components for it).
-* "Preview" formatting of markdown-files.  Markdown has become the de-facto standard for enriched text.  (Again, important not to reinvent the wheel, but reuse existing libraries).
+I think there exists libaries or software components for everything below - I think it's important not to reinvent the wheel.
+
+* Git export functionallity - possibility for clients to point their git to the server.
+* "Preview" formatting of markdown-files.  Markdown has become the de-facto standard for enriched text.
 * Fruit-salad mode with color-coding of well-known file types / programming languages, etc (both for the whole document, and for backticked code sections in a markdown file)
 * WYSIWYG-editing of markdown text.  Personally I think it's an anti-feature, but the not-so-technically-minded may like it.
-* Export to PDF.  Again, there exists many libraries for this.
+* Export to PDF.
 * Nifty user interfaces for checking "activity since my last visit" and things like that, for people who are not familiar with git.
 * Federation - should be easy to clone the git-repo locally, spin up a local web service and automatically have the git repos synced
 
@@ -38,10 +41,14 @@ An embedded document-wide chat is outside the scope - in most usage cases, the p
 * Storing comments on the produced text while keeping it git-backed.  Suggestion: embed the comments in the file itself, but in a different branch.
 * Conflict resolution.  Short-term workaround: throw a red text at the user, save the work in a separate branch and have the user manually resolve the conflicts
 
+## Possible existing solution
+
+I haven't tested it yet, but Gitea is a gitlab/github competitor, should be really easy to roll out, and offers web-interface for editing files.  It probably does not offer the possibility for interactive real-time collaboration, but perhaps an async solution would do for most purposes?  Research should be done on it.
+
 ## TODO
 
 * Clean up typos and bad grammar in this document
-* Do research on existing solutions.  (Does gitea allow collaborative editing of documents?)
+* Do research on existing solutions.
 * If nothing suitable found, make a design for a python-based service (we're primarily python programmers, after all).
 
 (Those points can easily be done by AI, but I've burned my weekly quota at Claude)
