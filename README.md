@@ -43,7 +43,8 @@ I think there exists libaries or software components for everything below - I th
 
 ## Possible existing solution
 
-I haven't tested it yet, but Gitea is a gitlab/github competitor, should be really easy to roll out, and offers web-interface for editing files.  It probably does not offer the possibility for interactive real-time collaboration, but perhaps an async solution would do for most purposes?  Research should be done on it.
+* **Gitea** - I haven't tested it yet, but Gitea is a gitlab/github competitor, should be really easy to roll out, and offers web-interface for editing files.  It probably does not offer the possibility for interactive real-time collaboration, but perhaps an async solution would do for most purposes?  Research should be done on it.
+* **NextCloud** does have the possibility for collaboratively edit markdown-text
 
 ## TODO
 
