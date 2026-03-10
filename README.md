@@ -1,4 +1,4 @@
-This describes a possible future project.  Research should exist to see if there are any existing solutions that could fit the bill, or if it's possible to simply build on top of the existing etherpad service.
+This describes a possible future project.  Research should exist to see if there are any existing solutions that could fit the bill, or if it's possible to simply build on top of the existing etherpad service.  Contributions are most welcome.
 
 ## What do I want
 
@@ -45,6 +45,8 @@ I think there exists libaries or software components for everything below - I th
 
 * **Gitea** - I haven't tested it yet, but Gitea is a gitlab/github competitor, should be really easy to roll out, and offers web-interface for editing files.  It probably does not offer the possibility for interactive real-time collaboration, but perhaps an async solution would do for most purposes?  Research should be done on it.
 * **NextCloud** does have the possibility for collaboratively edit markdown-text
+* **YJS** - https://github.com/yjs/yjs
+* Others?
 
 ## TODO
 
